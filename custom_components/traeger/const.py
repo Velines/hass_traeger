@@ -11,9 +11,9 @@ ISSUE_URL = "https://github.com/sebirdman/hass_traeger/issues"
 ICON = "mdi:format-quote-close"
 
 # Platforms
-WATER_HEATER = "water_heater"
+CLIMATE = "climate"
 SENSOR = "sensor"
-PLATFORMS = [WATER_HEATER, SENSOR]
+PLATFORMS = [CLIMATE, SENSOR]
 
 # Configuration and options
 CONF_ENABLED = "enabled"
@@ -23,6 +23,15 @@ CONF_PASSWORD = "password"
 # Defaults
 DEFAULT_NAME = DOMAIN
 
+# Grill Modes
+GRILL_MODE_OFFLINE = 99
+GRILL_MODE_COOL_DOWN = 8
+GRILL_MODE_CUSTOM_COOK = 7
+GRILL_MODE_MANUAL_COOK = 6
+GRILL_MODE_PREHEATING = 5
+GRILL_MODE_IGNITING = 4
+GRILL_MODE_IDLE = 3
+GRILL_MODE_SLEEPING = 2
 
 STARTUP_MESSAGE = f"""
 -------------------------------------------------------------------
